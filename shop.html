@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMe</title>
+    <link rel="stylesheet" href="shopme.css">
+</head>
+<body>
+<header>
+    <h1>ShopMe</h1>
+    <p>Your guide to eco-friendly shopping</p>
+    <p>Here you can find only eco-friendly products</p>
+</header>
+<section class="expiring-products">
+    <h2>Products Near Expiration</h2>
+    <div class="carousel">
+        <div class="product">
+            <img src="organic-milk.png" alt="Organic Milk">
+            <span class="badge">50% Off</span>
+            <p>Organic Milk - 2 days left</p>
+        </div>
+        <div class="product">
+            <img src="butter.png" alt="Vegan Wax Packaging">
+            <span class="badge">30% Off</span>
+            <p>Cultered Vegan Butter Organic - 4 days left</p>
+        </div>
+    </div>
+</section>
+<section class="expiring-products">
+    <h2>Saled Products</h2>
+    <div class="carousel">
+        <div class="product">
+            <img src="lipstic.png" alt="Eco Lipstic">
+            <span class="badge">4% Off</span>
+            <p> SHANGYANG Eco Lipstick - 5 days sale</p>
+        </div>
+        <div class="product">
+            <img src="blush.png" alt="Blush">
+            <span class="badge">10% Off</span>
+            <p>RIVER ORGANICS BLOOM BLUSH - 7 days sale</p>
+        </div>
+        <div class="product">
+            <img src="pens.png" alt="Pens">
+            <span class="badge">5% Off</span>
+            <p> Most Popular Eco Pens - 13 days sale</p>
+        </div>
+        <div class="product">
+            <img src="toothbrushes.png" alt="Toothbrush">
+            <span class="badge">50% Off</span>
+            <p> Huge Sale on Eco toothbrush Set❗️ - 10 days sale</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-list">
+        <div class="category-item" onclick="filterProducts('Dairy')">Dairy</div>
+        <div class="category-item" onclick="filterProducts('Clothing')">Clothing</div>
+        <div class="category-item" onclick="filterProducts('Makeup')">Makeup</div>
+        <div class="category-item" onclick="filterProducts('Stationery')">Stationery</div>
+        <div class="category-item" onclick="filterProducts('Toothbrushes')">Toothbrushes</div>
+        <div class="category-item" onclick="filterProducts('Packaging')">Packaging</div>
+    </div>
+    <div id="category-results" class="category-images-container"></div>
+    <button onclick="filterProducts('Clothing')">Clothing</button>
+    <button onclick="filterProducts('Makeup')">Makeup</button>
+</section>
+<footer>
+    <div class="social-icons">
+        <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
+        <a href="#"><img src="facebook1.jpg" alt="Facebook"></a>
+        <a href="#"><img src="twitter1.png" alt="Twitter"></a>
+    </div>
+    <div class="newsletter">
+        <p>Subscribe to our Newsletter:</p>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <p>© 2024 ShopMe. All Rights Reserved.</p>
+</footer>
+<script src="shopme.js"></script>
+</body>
+</html>
+
